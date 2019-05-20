@@ -1,0 +1,52 @@
+<!--pages/main/main.wxml-->
+
+
+<!-- 牧场导航首页 -->
+<view class='container'>
+      
+  <view class='location-search' wx:if='{{!isRoute}}'>
+    <image class='avatar' src='{{avatar_src}}'></image>
+    <input placeholder-class="place-holder" placeholder='请输入地点' type='text'  ></input>
+    <text class='search' catchtap='tapRoute'>去那里</text>
+  </view>
+  <view class='route-search' wx:else>
+    <view class='selfPositon'>
+      <view class='selfPosition-point'></view>
+      <input class='input-selfPosition' placeholder='我的位置' placeholder-class='placeHolder'></input>
+    </view>
+    <view class='aimPositon'>
+      <view class='selfPosition-point'></view>
+      <input class='input-aimPosition' placeholder='目标位置' placeholder-class='placeHolder'></input>
+    </view>
+  </view>
+  <view class='map'>
+    <map
+      id="map"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      scale="14"
+      controls="{{controls}}"
+      bindcontroltap="controltap"
+      markers="{{markers}}"
+      bindmarkertap="markertap"
+      polyline="{{polyline}}"
+      bindregionchange="regionchange"
+      show-location
+      style="width: 100%; height: 100%;"
+      show-compass="true"
+  ></map>
+</view>
+  
+  
+  <!-- <view class='foot'>
+
+    <view class='locate'>
+      <image src='/images/icon/定位.png' class='locate-img'></image>  
+    </view>
+
+    <view class='route' catchtap='tapRoute'>
+      <text class='route-text'>路线</text>
+      <image src='/images/icon/路线11白.png' class='route-img'></image>
+    </view>  
+  </view> -->
+</view>

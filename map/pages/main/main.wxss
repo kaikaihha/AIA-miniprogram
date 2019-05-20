@@ -1,0 +1,132 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.location-search{
+  position: absolute;
+  top: 16rpx;
+  left: 16rpx;
+  right: 16rpx;
+  /* background-color:white; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #0080FF;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+input{
+  border: 1px solid #F0F0F0;
+  border-radius: 8rpx;
+  background-color: white;
+  /* margin-right: 80rpx; */
+  align-items: center;
+}
+.place-holder { 
+  color: #aab2bd; 
+  font-size: 12px;
+  text-align: center;
+}
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+#map{
+  margin-top: 0rpx; 
+}
+
+/*查找按钮  */
+.search{
+  position: absolute;
+  right: 30rpx;
+  border: 1px solid #EdEdEd;
+  padding: 6rpx 20rpx;
+  color: #d0d0d0;
+  font-size: 30rpx;
+}
+.foot{
+  position: absolute;
+  bottom: 40rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  width: 100%;
+  align-content: center
+}
+.route{
+  align-items: center;
+  width: 200rpx;
+  height: 100rpx;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  background-color: #0080FF;
+  border-radius: 46rpx;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.route-text{
+  border-right: 1px solid  white;
+  color: white;
+  font-size: 34rpx;
+  padding-right: 20rpx; 
+  padding-left: 10rpx;
+}
+
+.route-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+
+.locate{
+  z-index: 99;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  left: 20rpx;
+  margin: 20rpx;
+  padding: 4rpx;
+}
+
+.locate-img{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.route-search{
+  position: absolute;
+  z-index: 99;
+  top: 18rpx;
+}
+
+.placeHolder{
+  color: #aab2bd;
+  font-size: 12px;
+  text-align: left;
+}
+
+.map{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 100rpx;
+  bottom: 0;
+}
+
+
+
+ /* 方案二 */
+
+
+
+
+
+
